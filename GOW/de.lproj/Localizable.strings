@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  GOW
+
+  Created by Winonito Programmer on 10/03/25.
+  
+*/
+
+/* MENU*/
+"menu.option.videogames" = "Videospiel";
+"menu.option.weapons" = "Waffen";
+"menu.option.characters" = "Charaktere";
+"menu.option.merchandise" = "Merchandise";
+
+/* WEAPONS */
+"weapon.name.boomshot" = "Boomshot Granatwerfer";
+"weapon.description.boomshot" = "Es war ein Pumpen-Grenatenwerfer mit Einzelgeschoss, der hauptsächlich von Locust verwendet wurde, insbesondere vom Boomer.";
+"weapon.name.hammerburstii" = "Hammerburst II";
+"weapon.description.hammerburstii" = "Es war das standardmäßige, hochleistungsfähige Locust-Sturmgewehr. Oft als die Locust-Entsprechung des COG Lancer-Sturmgewehrs bezeichnet.";
+"weapon.name.mulcher" = "Mulcher";
+"weapon.description.mulcher" = "Der Mulcher ist ein schweres, drehbares Gatling-Gewehr, das von der Coalition of Ordered Governments entwickelt wurde.";
+"weapon.name.bolo_grenade" = "Bologranate";
+"weapon.description.bolo_grenade" = "Die Bolo-Granate, auch als Splittergranate bekannt, war die Standard-Splittergranate, die von der Coalition of Ordered Governments, der Locust Horde und dem Swarm verwendet wurde.";
+"weapon.name.boltok" = "Boltok-Pistole";
+"weapon.description.boltok" = "Es war die Standardwaffe der Locust, insbesondere der Drones. Die Pistole setzt das Designprinzip der Locust-Waffen fort, indem sie Waffen mit einem Schwerpunkt auf roher Gewalt schafft.";
+"weapon.name.lancer" = "Lancer Mark 1 Sturmgewehr";
+"weapon.description.lancer" = "Bekannt als Retro Lancer während der Lambent-Pandemie, war es der Vorgänger des Lancer Mark 2 Sturmgewehrs. Früher das Hauptsturmgewehr der Armee der Coalition of Ordered Governments, wurde das Lancer Mark 1 während des Pendulum-Kriegs verwendet.";
+"weapon.name.lancer2" = "Lancer Mark 2 Sturmgewehr";
+"weapon.description.lancer2" = "Ein Upgrade des Lancer Mark 1 Sturmgewehrs, produziert mit einer Kettensägen-Bajonette, verbesserter Präzision, geringerem Rückstoß und einer größeren Munitionskapazität, jedoch mit weniger Feuerkraft als sein Vorgänger.";
+"weapon.name.sniper" = "Langstrecken-Scharfschützengewehr";
+"weapon.description.sniper" = "Es war ein Großkaliber-Einzelschuss-Scharfschützengewehr. Entwickelt von der Coalition of Ordered Governments während des Pendulum-Kriegs, wurde der Longshot auch noch siebzehn Jahre nach dem Emergence Day eingesetzt.";
+"weapon.name.hammer_of_dawn" = "Hammer der Dämmerung";
+"weapon.description.hammer_of_dawn" = "Der Hammer der Dämmerung war ein orbitaler Laser, der von einem Satelliten betrieben wurde und mit COG-Imulsion gespeist wurde. Die Hauptkomponenten wurden vom UIR-Wissenschaftler Mauris Ivo erfunden und vom Professor Adam Fenix vervollständigt, nachdem er während der Operation: Leveler gestohlen wurde.";
+"weapon.name.mx8" = "MX8 Snub-Pistole";
+"weapon.description.mx8" = "Es war die Standard-Seitenwaffe für das Personal der Streitkräfte der Coalition of Ordered Governments.";
