@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "markus_fenix.png",
+      "filename" : "Xbox_Wireless_Controller_Gears_of_War_JD_Fenix_Limited_Edition.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "markus_fenix@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "markus_fenix@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

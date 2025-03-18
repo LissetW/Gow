@@ -15,7 +15,5 @@ class CharactersCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        cName.setCustomFont(fontName: Constants.fontMenuTitle, size: Constants.fontSizeDefault, textStyle: .headline)
-        cName.text = "Default Text"
     }
 }

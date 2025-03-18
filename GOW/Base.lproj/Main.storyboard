@@ -77,6 +77,7 @@
                         <segue destination="bVt-am-Dih" kind="show" identifier="gamesSegue" id="CaL-F7-YX7"/>
                         <segue destination="9Dv-dN-Y5T" kind="show" identifier="weaponsSegue" id="Ob6-RR-6NO"/>
                         <segue destination="9Lh-oK-8Tx" kind="show" identifier="charactersSegue" id="hRd-cF-xSq"/>
+                        <segue destination="JVQ-bQ-KJO" kind="show" identifier="merchandiseSegue" id="RU8-kk-XJQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1m7-3P-mFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -275,41 +276,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="GOWBlack1"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WgC-5S-wKP">
-                            <size key="itemSize" width="300" height="400"/>
+                            <size key="itemSize" width="129" height="234"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="charactersCell" id="yKn-9U-24Q" userLabel="CharactersCell" customClass="CharactersCell" customModule="GOW" customModuleProvider="target">
-                                <rect key="frame" x="46.666666666666664" y="0.0" width="300" height="400"/>
+                                <rect key="frame" x="0.0" y="0.0" width="129" height="234"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RrK-dl-mJA">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="129" height="234"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgi-Bd-cEa" userLabel="cName">
-                                            <rect key="frame" x="113" y="327" width="74" height="17"/>
-                                            <fontDescription key="fontDescription" name="Coalition" family="Coalition" pointSize="17"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rY2-HB-qYf" userLabel="cPoster">
+                                            <rect key="frame" x="10" y="8" width="109" height="115"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="115" id="Dq6-Kp-wI1"/>
+                                                <constraint firstAttribute="height" constant="115" id="n2P-re-gO9"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Mgi-Bd-cEa" userLabel="cName">
+                                            <rect key="frame" x="16" y="131" width="97" height="87"/>
+                                            <fontDescription key="fontDescription" name="Coalition" family="Coalition" pointSize="15"/>
                                             <color key="textColor" name="GOWText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rY2-HB-qYf" userLabel="cPoster">
-                                            <rect key="frame" x="15" y="10" width="270" height="270"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="270" id="6dE-zO-IgQ"/>
-                                                <constraint firstAttribute="width" constant="270" id="O1q-eh-rGt"/>
-                                            </constraints>
-                                        </imageView>
                                     </subviews>
+                                    <color key="backgroundColor" name="GOWBlack1"/>
                                     <constraints>
-                                        <constraint firstItem="Mgi-Bd-cEa" firstAttribute="top" secondItem="rY2-HB-qYf" secondAttribute="bottom" constant="47" id="U9L-aK-aRJ"/>
-                                        <constraint firstItem="rY2-HB-qYf" firstAttribute="top" secondItem="RrK-dl-mJA" secondAttribute="top" constant="10" id="clh-ob-W69"/>
-                                        <constraint firstItem="Mgi-Bd-cEa" firstAttribute="leading" secondItem="RrK-dl-mJA" secondAttribute="leading" constant="113" id="kaP-Gw-6Cs"/>
-                                        <constraint firstItem="rY2-HB-qYf" firstAttribute="centerX" secondItem="RrK-dl-mJA" secondAttribute="centerX" id="z3a-vn-vdB"/>
+                                        <constraint firstAttribute="trailing" secondItem="rY2-HB-qYf" secondAttribute="trailing" constant="10" id="62i-OV-49W"/>
+                                        <constraint firstItem="rY2-HB-qYf" firstAttribute="leading" secondItem="RrK-dl-mJA" secondAttribute="leading" constant="10" id="CUC-aM-R7F"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Mgi-Bd-cEa" secondAttribute="trailing" constant="8" id="KFy-gq-1nP"/>
+                                        <constraint firstItem="rY2-HB-qYf" firstAttribute="top" secondItem="RrK-dl-mJA" secondAttribute="top" constant="8" id="NCC-cZ-rZ3"/>
+                                        <constraint firstItem="Mgi-Bd-cEa" firstAttribute="leading" secondItem="RrK-dl-mJA" secondAttribute="leadingMargin" constant="8" id="cwa-ru-E0F"/>
+                                        <constraint firstItem="Mgi-Bd-cEa" firstAttribute="top" secondItem="rY2-HB-qYf" secondAttribute="bottom" constant="8" id="fMW-Y6-ndp"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Mgi-Bd-cEa" secondAttribute="bottom" constant="8" id="qsO-4b-6vd"/>
                                     </constraints>
                                 </collectionViewCellContentView>
-                                <size key="customSize" width="300" height="400"/>
+                                <color key="backgroundColor" name="GOWBlack1"/>
+                                <size key="customSize" width="129" height="234"/>
                                 <connections>
                                     <outlet property="cName" destination="Mgi-Bd-cEa" id="eMK-Q5-ch6"/>
                                     <outlet property="cPoster" destination="rY2-HB-qYf" id="srw-Bq-bXx"/>
@@ -328,7 +334,104 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M8K-XK-6zi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="817.55725190839689" y="883.80281690140851"/>
+            <point key="canvasLocation" x="634" y="936"/>
+        </scene>
+        <!--Merchandise View Controller-->
+        <scene sceneID="n15-0x-eQP">
+            <objects>
+                <tableViewController id="JVQ-bQ-KJO" customClass="MerchandiseViewController" customModule="GOW" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="yKp-Z1-dWG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="GOWBlack1"/>
+                        <color key="separatorColor" name="GOWBlack1"/>
+                        <color key="sectionIndexColor" name="GOWText"/>
+                        <color key="sectionIndexBackgroundColor" name="GOWBlack1"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="257" id="mzP-TS-tLe" customClass="CategoryCell" customModule="GOW" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="257"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mzP-TS-tLe" id="9XW-Oo-8zI">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="257"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="s7T-bW-dPh">
+                                            <rect key="frame" x="-23" y="64" width="242" height="162"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="GOWBlack1"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rbt-x6-olH">
+                                                <size key="itemSize" width="128" height="154"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productCell" id="oFI-ZX-zW9" customClass="ProductCell" customModule="GOW" customModuleProvider="target">
+                                                    <rect key="frame" x="57" y="0.0" width="128" height="154"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Zyu-Uh-zS0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="154"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BAX-Dc-MIt" userLabel="cImage">
+                                                                <rect key="frame" x="19" y="8" width="90" height="90"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="90" id="u1c-FS-XOd"/>
+                                                                    <constraint firstAttribute="height" constant="90" id="wPO-9O-H4s"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SII-4g-srZ" userLabel="cProduct">
+                                                                <rect key="frame" x="19.000000000000004" y="103" width="44.333333333333343" height="20.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                <color key="textColor" name="GOWText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGG-a8-RCJ" userLabel="cPrice">
+                                                                <rect key="frame" x="19" y="128.33333333333334" width="42" height="21"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="GOWText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="GOWBlack1"/>
+                                                        <constraints>
+                                                            <constraint firstItem="BAX-Dc-MIt" firstAttribute="centerX" secondItem="Zyu-Uh-zS0" secondAttribute="centerX" id="8RY-QN-n5t"/>
+                                                            <constraint firstItem="SII-4g-srZ" firstAttribute="top" secondItem="BAX-Dc-MIt" secondAttribute="bottom" constant="5" id="AuM-Qg-lsC"/>
+                                                            <constraint firstItem="BAX-Dc-MIt" firstAttribute="top" secondItem="Zyu-Uh-zS0" secondAttribute="top" constant="8" id="ZWp-mB-rgF"/>
+                                                            <constraint firstItem="SII-4g-srZ" firstAttribute="leading" secondItem="Zyu-Uh-zS0" secondAttribute="leading" constant="19" id="uPc-Vh-cO8"/>
+                                                            <constraint firstItem="bGG-a8-RCJ" firstAttribute="leading" secondItem="Zyu-Uh-zS0" secondAttribute="leading" constant="19" id="w3J-cP-yhn"/>
+                                                            <constraint firstItem="bGG-a8-RCJ" firstAttribute="top" secondItem="SII-4g-srZ" secondAttribute="bottom" constant="5" id="ycJ-lQ-TKt"/>
+                                                        </constraints>
+                                                    </collectionViewCellContentView>
+                                                    <color key="backgroundColor" name="GOWBlack1"/>
+                                                    <size key="customSize" width="128" height="154"/>
+                                                    <connections>
+                                                        <outlet property="cPrice" destination="bGG-a8-RCJ" id="EQo-sC-jWr"/>
+                                                        <outlet property="cProduct" destination="SII-4g-srZ" id="6y2-5d-gne"/>
+                                                        <outlet property="pImage" destination="BAX-Dc-MIt" id="oTF-SS-U07"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                        </collectionView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="GOWBlack1"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="GOWBlack1"/>
+                                <connections>
+                                    <outlet property="productsCollectionView" destination="s7T-bW-dPh" id="vTU-xQ-6eD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JVQ-bQ-KJO" id="q1M-PQ-AbV"/>
+                            <outlet property="delegate" destination="JVQ-bQ-KJO" id="0Kn-cN-Efc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Myb-KT-aRx"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZc-dh-KGY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637.4045801526718" y="635.91549295774655"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gtm-ax-CIi">

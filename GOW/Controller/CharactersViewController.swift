@@ -13,7 +13,7 @@ class CharactersViewController: UICollectionViewController {
     
     // Data source
     let characters: [Character] = [
-        Character(name: "Marcus Fenix", image: "marcus_fenix"),
+        Character(name: "Marcus Fenix", image: "markus_fenix"),
         Character(name: "Dominic Santiago", image: "dominic_santiago"),
         Character(name: "Augustus Cole", image: "augustus_cole"),
         Character(name: "Damon Baird", image: "damon_baird"),
@@ -25,12 +25,7 @@ class CharactersViewController: UICollectionViewController {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
-        if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
-            layout.scrollDirection = .vertical
-            layout.minimumLineSpacing = 10
-            layout.minimumInteritemSpacing = 10
-        }
-        
+        collectionView.collectionViewLayout = UICollectionViewFlowLayout()
     }
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -48,5 +43,11 @@ class CharactersViewController: UICollectionViewController {
         cell.cName.text = character.name
         cell.cPoster.image = UIImage(named: character.image)
         return cell
+    }
+}
+
+extension CharactersViewController: UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 150, height: 300)
     }
 }
